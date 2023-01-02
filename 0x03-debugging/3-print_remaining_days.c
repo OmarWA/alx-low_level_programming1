@@ -26,7 +26,7 @@ void print_remaining_days(int month, int day, int year)
 	{
 		if ((((year % 100) == 0) && ((year % 400) == 0)) || ((year % 4) == 0))
 		{
-			day = ((month >= 2) && (day > 60)) ? (day + 1) : day;
+			day = ((month > 2) && (day >= 60)) ? (day + 1) : day;
 			isLeap = 1;
 		}
 	}
