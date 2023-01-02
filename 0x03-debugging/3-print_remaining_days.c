@@ -12,7 +12,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	bool isLeap = false;
+	int isLeap = 0;
 
 	if (!((year % 4) == 0))
 	{
@@ -27,9 +27,9 @@ void print_remaining_days(int month, int day, int year)
 		if ((((year % 100) == 0) && ((year % 400) == 0)) || ((year % 4) == 0))
 		{
 			day = ((month >= 2) && (day >= 60)) ? (day + 1) : day;
-			isLeap = true;
+			isLeap = 1;
 		}
 	}
 	printf("Day of the year: %d\n", day);
-	printf("Remaining days: %d\n", (isLeap ? 366 : 365) - day);
+	printf("Remaining days: %d\n", ((isLeap == 1) ? 366 : 365) - day);
 }
