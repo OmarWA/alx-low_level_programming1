@@ -27,7 +27,7 @@ RESET:
 			j++;
 			lineCounter++;
 		}
-
 		_putchar ('\n');
+		lineCounter = 0;
 	}
 }
