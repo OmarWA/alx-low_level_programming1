@@ -16,4 +16,5 @@ int _isdigit(int c)
 		if (c == i)
 			isDigit = 1;
 	}
+	return (isDigit);
 }
