@@ -13,7 +13,8 @@ void more_numbers(void)
 	{
 RESET:
 		j = 48;
-		while (lineCounter <= 15)
+
+		while (lineCounter < 15)
 		{
 			if (j > 57)
 				goto RESET;
@@ -26,6 +27,7 @@ RESET:
 			j++;
 			lineCounter++;
 		}
+
 		_putchar ('\n');
 	}
 }
