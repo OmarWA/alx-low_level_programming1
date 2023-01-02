@@ -3,6 +3,8 @@
 /**
  * main -- This is the entry point of the whole program
  *
+ * Return:
+ * 0 if all went well, Non-zero otherwise.
  */
 int main(void)
 {
