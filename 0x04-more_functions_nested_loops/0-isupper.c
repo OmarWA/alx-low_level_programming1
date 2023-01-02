@@ -11,7 +11,9 @@ int _isupper(int c)
 {
 	int isUpper = 0;
 
-	for (int i = 65; i <= 90; i++)
+	int i;
+
+	for (i = 65; i <= 90; i++)
 	{
 		if (c == i)
 			isUpper = 1;
