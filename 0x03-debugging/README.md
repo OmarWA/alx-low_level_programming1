@@ -1,0 +1,1 @@
+This directory contains my attempts to the C debugging project.
