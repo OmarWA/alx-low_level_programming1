@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+/**
+ * main - the entry point of the program
+ * Return: 0 upon successful execution
+*/
+int main(void)
+{
+
+int tens = 0x30;
+int units = tens;
+
+while (tens < 0x39)
+{
+
+while (units <= 0x39)
+{
+putchar(tens);
+putchar(units);
+if (tens == 0x38)
+{
+units++;
+continue;
+}
+putchar(',');
+putchar(' ');
+units++;  
+}
+tens++;
+units = tens + 1;
+
+}
+putchar('\n');
+return (0);
+}

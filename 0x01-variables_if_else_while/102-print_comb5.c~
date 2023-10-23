@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int units1,units2;
+  int tens1, tens2;
+
+  units1 = 0x30;
+  units2 = 0x30;
+
+  tens1 = 0x30;
+  tens2 = 0x30;
+
+  while (tens2 <= 0x39)
+    {
+      while (units2 <= 0x39)
+	{
+	  while (tens1 <= 0x39)
+	    {
+	      while (units1 <= 0x39)
+		{
+		  putchar(tens2);
+		  putchar(units2);
+		  putchar(' ');
+		  putchar(tens1);
+		  putchar(units1);
+
+		  if ((tens2 == 9) && (units2 == 8) && (tens1 == 9) && (units1 == 9))
+		    {
+		      units1++;
+		      continue;
+		    }
+		  putchar(',');
+		  putchar(' ');
+		  units1++;
+		}
+	      tens1++;
+	      
+	    }
+	  units2++;
+	  
+	}
+      tens2++;
+    }
+  putchar('\n');
+
+  return (0);
+}

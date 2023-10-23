@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+
+/**
+ * main - the entry point of the program
+ * Return: 0 upon successful execution of the program
+ */
+int main(void)
+
+{
+char character = 'a';
+
+while (character <= 'z')
+{
+if ((character == 'q') || (character == 'e'))
+continue;
+putchar(character);
+character++;
+}
+return (0);
+}
